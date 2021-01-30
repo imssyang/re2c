@@ -1,0 +1,14 @@
+
+https://re2c.org/install/install.html
+
+cd re2c-2.0.3
+mkdir .build && cd .build
+cmake .. \
+-DCMAKE_INSTALL_PREFIX=/opt/re2c \
+-DRE2C_BUILD_RE2GO=yes \
+-DRE2C_BUILD_LIBS=yes \
+-DRE2C_REBUILD_DOCS=yes \
+-DBUILD_SHARED_LIBS=yes
+make
+make install
+

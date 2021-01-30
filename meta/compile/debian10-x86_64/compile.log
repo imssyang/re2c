@@ -1,0 +1,391 @@
+
+❯ cmake .. \
+> -DCMAKE_INSTALL_PREFIX=/opt/re2c \
+> -DRE2C_BUILD_RE2GO=yes \
+> -DRE2C_BUILD_LIBS=yes \
+> -DRE2C_REBUILD_DOCS=yes \
+> -DBUILD_SHARED_LIBS=yes
+-- The C compiler identification is GNU 8.3.0
+-- The CXX compiler identification is GNU 8.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found BISON: /usr/bin/bison (found version "3.3.2") 
+-- Performing Test cxxflag_-O2
+-- Performing Test cxxflag_-O2 - Success
+-- Performing Test cxxflag_-W
+-- Performing Test cxxflag_-W - Success
+-- Performing Test cxxflag_-Wall
+-- Performing Test cxxflag_-Wall - Success
+-- Performing Test cxxflag_-Wextra
+-- Performing Test cxxflag_-Wextra - Success
+-- Performing Test cxxflag_-Weffc++
+-- Performing Test cxxflag_-Weffc++ - Success
+-- Performing Test cxxflag_-pedantic
+-- Performing Test cxxflag_-pedantic - Success
+-- Performing Test cxxflag_-Wformat_2
+-- Performing Test cxxflag_-Wformat_2 - Success
+-- Performing Test cxxflag_-Wredundant-decls
+-- Performing Test cxxflag_-Wredundant-decls - Success
+-- Performing Test cxxflag_-Wsuggest-attribute_format
+-- Performing Test cxxflag_-Wsuggest-attribute_format - Success
+-- Performing Test cxxflag_-Wconversion
+-- Performing Test cxxflag_-Wconversion - Success
+-- Performing Test cxxflag_-Wsign-conversion
+-- Performing Test cxxflag_-Wsign-conversion - Success
+-- Performing Test cxxflag_-Werror_return-type
+-- Performing Test cxxflag_-Werror_return-type - Success
+-- Performing Test cxxflag_-Weverything
+-- Performing Test cxxflag_-Weverything - Failed
+-- Performing Test cxxflag_-fdiagnostics-color_always
+-- Performing Test cxxflag_-fdiagnostics-color_always - Success
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for sys/stat.h
+-- Looking for sys/stat.h - found
+-- Looking for fcntl.h
+-- Looking for fcntl.h - found
+-- Looking for unistd.h
+-- Looking for unistd.h - found
+-- Looking for io.h
+-- Looking for io.h - not found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of char
+-- Check size of char - done
+-- Check size of short
+-- Check size of short - done
+-- Check size of int
+-- Check size of int - done
+-- Check size of long
+-- Check size of long - done
+-- Check size of long long
+-- Check size of long long - done
+-- Check size of __int64
+-- Check size of __int64 - failed
+-- Check size of void *
+-- Check size of void * - done
+-- Check size of 0l
+-- Check size of 0l - done
+-- Check size of 0ll
+-- Check size of 0ll - done
+-- Check size of 0i8
+-- Check size of 0i8 - failed
+-- Writing config.h
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /opt/re2c/archive/source/re2c-2.0.3/.build
+
+
+❯ make
+Scanning dependencies of target libre2c_objects
+[  0%] Building CXX object CMakeFiles/libre2c_objects.dir/lib/regcomp.cc.o
+[  0%] Building CXX object CMakeFiles/libre2c_objects.dir/lib/regexec.cc.o
+[  1%] Building CXX object CMakeFiles/libre2c_objects.dir/lib/regexec_dfa.cc.o
+[  1%] Building CXX object CMakeFiles/libre2c_objects.dir/lib/regexec_nfa_leftmost.cc.o
+[  2%] Building CXX object CMakeFiles/libre2c_objects.dir/lib/regexec_nfa_leftmost_trie.cc.o
+[  2%] Building CXX object CMakeFiles/libre2c_objects.dir/lib/regexec_nfa_posix.cc.o
+[  2%] Building CXX object CMakeFiles/libre2c_objects.dir/lib/regexec_nfa_posix_trie.cc.o
+[  3%] Building CXX object CMakeFiles/libre2c_objects.dir/lib/regexec_nfa_posix_backward.cc.o
+[  3%] Building CXX object CMakeFiles/libre2c_objects.dir/lib/regexec_nfa_posix_kuklewicz.cc.o
+[  4%] Building CXX object CMakeFiles/libre2c_objects.dir/lib/regfree.cc.o
+[  4%] Building CXX object CMakeFiles/libre2c_objects.dir/lib/stubs.cc.o
+[  4%] Building CXX object CMakeFiles/libre2c_objects.dir/src/parse/ast.cc.o
+[  5%] Building CXX object CMakeFiles/libre2c_objects.dir/src/parse/unescape.cc.o
+[  5%] Building CXX object CMakeFiles/libre2c_objects.dir/src/options/opt.cc.o
+[  6%] Building CXX object CMakeFiles/libre2c_objects.dir/src/cfg/cfg.cc.o
+[  6%] Building CXX object CMakeFiles/libre2c_objects.dir/src/cfg/compact.cc.o
+[  6%] Building CXX object CMakeFiles/libre2c_objects.dir/src/cfg/dce.cc.o
+[  7%] Building CXX object CMakeFiles/libre2c_objects.dir/src/cfg/freeze.cc.o
+[  7%] Building CXX object CMakeFiles/libre2c_objects.dir/src/cfg/interfere.cc.o
+[  8%] Building CXX object CMakeFiles/libre2c_objects.dir/src/cfg/liveanal.cc.o
+[  8%] Building CXX object CMakeFiles/libre2c_objects.dir/src/cfg/normalize.cc.o
+[  8%] Building CXX object CMakeFiles/libre2c_objects.dir/src/cfg/optimize.cc.o
+[  9%] Building CXX object CMakeFiles/libre2c_objects.dir/src/cfg/rename.cc.o
+[  9%] Building CXX object CMakeFiles/libre2c_objects.dir/src/cfg/varalloc.cc.o
+[ 10%] Building CXX object CMakeFiles/libre2c_objects.dir/src/dfa/closure.cc.o
+[ 10%] Building CXX object CMakeFiles/libre2c_objects.dir/src/debug/dump_adfa.cc.o
+[ 10%] Building CXX object CMakeFiles/libre2c_objects.dir/src/debug/dump_cfg.cc.o
+[ 11%] Building CXX object CMakeFiles/libre2c_objects.dir/src/debug/dump_dfa.cc.o
+[ 11%] Building CXX object CMakeFiles/libre2c_objects.dir/src/debug/dump_dfa_tree.cc.o
+[ 12%] Building CXX object CMakeFiles/libre2c_objects.dir/src/debug/dump_interf.cc.o
+[ 12%] Building CXX object CMakeFiles/libre2c_objects.dir/src/debug/dump_nfa.cc.o
+[ 12%] Building CXX object CMakeFiles/libre2c_objects.dir/src/dfa/dead_rules.cc.o
+[ 13%] Building CXX object CMakeFiles/libre2c_objects.dir/src/dfa/determinization.cc.o
+[ 13%] Building CXX object CMakeFiles/libre2c_objects.dir/src/dfa/fallback_tags.cc.o
+[ 14%] Building CXX object CMakeFiles/libre2c_objects.dir/src/dfa/fillpoints.cc.o
+[ 14%] Building CXX object CMakeFiles/libre2c_objects.dir/src/dfa/find_state.cc.o
+[ 14%] Building CXX object CMakeFiles/libre2c_objects.dir/src/dfa/minimization.cc.o
+[ 15%] Building CXX object CMakeFiles/libre2c_objects.dir/src/dfa/stacmd.cc.o
+[ 15%] Building CXX object CMakeFiles/libre2c_objects.dir/src/dfa/tagver_table.cc.o
+[ 16%] Building CXX object CMakeFiles/libre2c_objects.dir/src/dfa/tcmd.cc.o
+[ 16%] Building CXX object CMakeFiles/libre2c_objects.dir/src/nfa/estimate_size.cc.o
+[ 16%] Building CXX object CMakeFiles/libre2c_objects.dir/src/nfa/re_to_nfa.cc.o
+[ 17%] Building CXX object CMakeFiles/libre2c_objects.dir/src/encoding/enc.cc.o
+[ 17%] Building CXX object CMakeFiles/libre2c_objects.dir/src/encoding/range_suffix.cc.o
+[ 18%] Building CXX object CMakeFiles/libre2c_objects.dir/src/encoding/ebcdic/ebcdic_regexp.cc.o
+[ 18%] Building CXX object CMakeFiles/libre2c_objects.dir/src/encoding/utf16/utf16.cc.o
+[ 18%] Building CXX object CMakeFiles/libre2c_objects.dir/src/encoding/utf16/utf16_regexp.cc.o
+[ 19%] Building CXX object CMakeFiles/libre2c_objects.dir/src/encoding/utf8/utf8.cc.o
+[ 19%] Building CXX object CMakeFiles/libre2c_objects.dir/src/encoding/utf8/utf8_regexp.cc.o
+[ 20%] Building CXX object CMakeFiles/libre2c_objects.dir/src/msg/msg.cc.o
+[ 20%] Building CXX object CMakeFiles/libre2c_objects.dir/src/msg/warn.cc.o
+[ 20%] Building CXX object CMakeFiles/libre2c_objects.dir/src/regexp/ast_to_re.cc.o
+[ 21%] Building CXX object CMakeFiles/libre2c_objects.dir/src/regexp/default_tags.cc.o
+[ 21%] Building CXX object CMakeFiles/libre2c_objects.dir/src/regexp/fixed_tags.cc.o
+[ 22%] Building CXX object CMakeFiles/libre2c_objects.dir/src/regexp/nullable.cc.o
+[ 22%] Building CXX object CMakeFiles/libre2c_objects.dir/src/regexp/rule.cc.o
+[ 22%] Building CXX object CMakeFiles/libre2c_objects.dir/src/regexp/split_charset.cc.o
+[ 23%] Building CXX object CMakeFiles/libre2c_objects.dir/src/regexp/tag.cc.o
+[ 23%] Building CXX object CMakeFiles/libre2c_objects.dir/src/skeleton/control_flow.cc.o
+[ 24%] Building CXX object CMakeFiles/libre2c_objects.dir/src/skeleton/maxpath.cc.o
+[ 24%] Building CXX object CMakeFiles/libre2c_objects.dir/src/skeleton/skeleton.cc.o
+[ 24%] Building CXX object CMakeFiles/libre2c_objects.dir/src/util/range.cc.o
+[ 25%] Building CXX object CMakeFiles/libre2c_objects.dir/src/util/s_to_n32_unsafe.cc.o
+[ 25%] Built target libre2c_objects
+[ 25%] Copying bootstrap src/msg/ver_to_vernum.cc, reconfigure with RE2C_REBUILD_LEXERS to regenerate
+Scanning dependencies of target re2c_objects_autogen_ver_to_vernum
+[ 25%] Building CXX object CMakeFiles/re2c_objects_autogen_ver_to_vernum.dir/src/msg/ver_to_vernum.cc.o
+[ 25%] Built target re2c_objects_autogen_ver_to_vernum
+[ 26%] Generating lib/parse.cc, lib/parse.h
+[ 26%] Copying bootstrap lib/lex.cc, reconfigure with RE2C_REBUILD_LEXERS to regenerate
+Scanning dependencies of target libre2c_objects_autogen
+[ 26%] Building CXX object CMakeFiles/libre2c_objects_autogen.dir/lib/lex.cc.o
+[ 26%] Building CXX object CMakeFiles/libre2c_objects_autogen.dir/lib/parse.cc.o
+[ 26%] Built target libre2c_objects_autogen
+Scanning dependencies of target libre2c_shared
+[ 27%] Linking CXX shared library libre2c.so
+[ 27%] Built target libre2c_shared
+Scanning dependencies of target bench_libre2c
+[ 27%] Building CXX object CMakeFiles/bench_libre2c.dir/lib/bench.cc.o
+[ 27%] Linking CXX executable bench_libre2c
+[ 27%] Built target bench_libre2c
+Scanning dependencies of target test_libre2c
+[ 27%] Building CXX object CMakeFiles/test_libre2c.dir/lib/test.cc.o
+[ 28%] Linking CXX executable test_libre2c
+[ 28%] Built target test_libre2c
+Scanning dependencies of target re2c_test_ver_to_vernum
+[ 28%] Building CXX object CMakeFiles/re2c_test_ver_to_vernum.dir/src/test/ver_to_vernum/test.cc.o
+[ 29%] Linking CXX executable re2c_test_ver_to_vernum
+[ 29%] Built target re2c_test_ver_to_vernum
+[ 30%] Generating doc/re2go.1
+../doc/manual/api/api.rst_:52: (WARNING/2) Cannot analyze code. Pygments package not found.
+../doc/manual/api/api.rst_:78: (WARNING/2) Cannot analyze code. Pygments package not found.
+[ 30%] Generating src/parse/parser.cc, src/parse/parser.h
+[ 31%] Copying bootstrap src/parse/lex.cc and src/parse/lex.h, reconfigure with RE2C_REBUILD_LEXERS to regenerate
+[ 31%] Copying bootstrap src/parse/lex_conf.cc, reconfigure with RE2C_REBUILD_LEXERS to regenerate
+[ 31%] Copying bootstrap src/options/parse_opts.cc, reconfigure with RE2C_REBUILD_LEXERS to regenerate
+[ 32%] Generating src/msg/help.cc
+[ 32%] Generating doc/re2c.1
+../doc/manual/api/api.rst_:52: (WARNING/2) Cannot analyze code. Pygments package not found.
+../doc/manual/api/api.rst_:78: (WARNING/2) Cannot analyze code. Pygments package not found.
+Scanning dependencies of target re2c_objects_autogen
+[ 32%] Building CXX object CMakeFiles/re2c_objects_autogen.dir/src/parse/parser.cc.o
+[ 32%] Building CXX object CMakeFiles/re2c_objects_autogen.dir/src/parse/lex.cc.o
+[ 33%] Building CXX object CMakeFiles/re2c_objects_autogen.dir/src/parse/lex_conf.cc.o
+[ 33%] Building CXX object CMakeFiles/re2c_objects_autogen.dir/src/options/parse_opts.cc.o
+[ 34%] Building CXX object CMakeFiles/re2c_objects_autogen.dir/src/msg/help.cc.o
+[ 34%] Built target re2c_objects_autogen
+Scanning dependencies of target re2c
+[ 34%] Building CXX object CMakeFiles/re2c.dir/src/codegen/code_goto.cc.o
+[ 35%] Building CXX object CMakeFiles/re2c.dir/src/codegen/combine.cc.o
+[ 35%] Building CXX object CMakeFiles/re2c.dir/src/codegen/gen_bitmaps.cc.o
+[ 35%] Building CXX object CMakeFiles/re2c.dir/src/codegen/gen_delayed.cc.o
+[ 36%] Building CXX object CMakeFiles/re2c.dir/src/codegen/gen_dfa.cc.o
+[ 36%] Building CXX object CMakeFiles/re2c.dir/src/codegen/gen_goto.cc.o
+[ 37%] Building CXX object CMakeFiles/re2c.dir/src/codegen/gen_program.cc.o
+[ 37%] Building CXX object CMakeFiles/re2c.dir/src/codegen/gen_state.cc.o
+[ 37%] Building CXX object CMakeFiles/re2c.dir/src/codegen/helpers.cc.o
+[ 38%] Building CXX object CMakeFiles/re2c.dir/src/codegen/render.cc.o
+[ 38%] Building CXX object CMakeFiles/re2c.dir/src/options/opt.cc.o
+[ 39%] Building CXX object CMakeFiles/re2c.dir/src/nfa/estimate_size.cc.o
+[ 39%] Building CXX object CMakeFiles/re2c.dir/src/nfa/re_to_nfa.cc.o
+[ 39%] Building CXX object CMakeFiles/re2c.dir/src/adfa/adfa.cc.o
+[ 40%] Building CXX object CMakeFiles/re2c.dir/src/adfa/prepare.cc.o
+[ 40%] Building CXX object CMakeFiles/re2c.dir/src/debug/dump_adfa.cc.o
+[ 41%] Building CXX object CMakeFiles/re2c.dir/src/debug/dump_cfg.cc.o
+[ 41%] Building CXX object CMakeFiles/re2c.dir/src/debug/dump_dfa.cc.o
+[ 41%] Building CXX object CMakeFiles/re2c.dir/src/debug/dump_dfa_tree.cc.o
+[ 42%] Building CXX object CMakeFiles/re2c.dir/src/debug/dump_interf.cc.o
+[ 42%] Building CXX object CMakeFiles/re2c.dir/src/debug/dump_nfa.cc.o
+[ 43%] Building CXX object CMakeFiles/re2c.dir/src/cfg/cfg.cc.o
+[ 43%] Building CXX object CMakeFiles/re2c.dir/src/cfg/compact.cc.o
+[ 43%] Building CXX object CMakeFiles/re2c.dir/src/cfg/dce.cc.o
+[ 44%] Building CXX object CMakeFiles/re2c.dir/src/cfg/freeze.cc.o
+[ 44%] Building CXX object CMakeFiles/re2c.dir/src/cfg/interfere.cc.o
+[ 45%] Building CXX object CMakeFiles/re2c.dir/src/cfg/liveanal.cc.o
+[ 45%] Building CXX object CMakeFiles/re2c.dir/src/cfg/normalize.cc.o
+[ 45%] Building CXX object CMakeFiles/re2c.dir/src/cfg/optimize.cc.o
+[ 46%] Building CXX object CMakeFiles/re2c.dir/src/cfg/rename.cc.o
+[ 46%] Building CXX object CMakeFiles/re2c.dir/src/cfg/varalloc.cc.o
+[ 47%] Building CXX object CMakeFiles/re2c.dir/src/dfa/closure.cc.o
+[ 47%] Building CXX object CMakeFiles/re2c.dir/src/dfa/dead_rules.cc.o
+[ 47%] Building CXX object CMakeFiles/re2c.dir/src/dfa/determinization.cc.o
+[ 48%] Building CXX object CMakeFiles/re2c.dir/src/dfa/fallback_tags.cc.o
+[ 48%] Building CXX object CMakeFiles/re2c.dir/src/dfa/fillpoints.cc.o
+[ 50%] Building CXX object CMakeFiles/re2c.dir/src/dfa/find_state.cc.o
+[ 50%] Building CXX object CMakeFiles/re2c.dir/src/dfa/minimization.cc.o
+[ 50%] Building CXX object CMakeFiles/re2c.dir/src/dfa/stacmd.cc.o
+[ 51%] Building CXX object CMakeFiles/re2c.dir/src/dfa/tagver_table.cc.o
+[ 51%] Building CXX object CMakeFiles/re2c.dir/src/dfa/tcmd.cc.o
+[ 52%] Building CXX object CMakeFiles/re2c.dir/src/encoding/ebcdic/ebcdic_regexp.cc.o
+[ 52%] Building CXX object CMakeFiles/re2c.dir/src/encoding/enc.cc.o
+[ 52%] Building CXX object CMakeFiles/re2c.dir/src/encoding/range_suffix.cc.o
+[ 53%] Building CXX object CMakeFiles/re2c.dir/src/encoding/utf8/utf8_regexp.cc.o
+[ 53%] Building CXX object CMakeFiles/re2c.dir/src/encoding/utf8/utf8.cc.o
+[ 54%] Building CXX object CMakeFiles/re2c.dir/src/encoding/utf16/utf16_regexp.cc.o
+[ 54%] Building CXX object CMakeFiles/re2c.dir/src/encoding/utf16/utf16.cc.o
+[ 54%] Building CXX object CMakeFiles/re2c.dir/src/msg/msg.cc.o
+[ 55%] Building CXX object CMakeFiles/re2c.dir/src/msg/warn.cc.o
+[ 55%] Building CXX object CMakeFiles/re2c.dir/src/regexp/ast_to_re.cc.o
+[ 56%] Building CXX object CMakeFiles/re2c.dir/src/regexp/default_tags.cc.o
+[ 56%] Building CXX object CMakeFiles/re2c.dir/src/regexp/fixed_tags.cc.o
+[ 56%] Building CXX object CMakeFiles/re2c.dir/src/regexp/nullable.cc.o
+[ 57%] Building CXX object CMakeFiles/re2c.dir/src/regexp/rule.cc.o
+[ 57%] Building CXX object CMakeFiles/re2c.dir/src/regexp/split_charset.cc.o
+[ 58%] Building CXX object CMakeFiles/re2c.dir/src/regexp/tag.cc.o
+[ 58%] Building CXX object CMakeFiles/re2c.dir/src/compile.cc.o
+[ 58%] Building CXX object CMakeFiles/re2c.dir/src/skeleton/control_flow.cc.o
+[ 59%] Building CXX object CMakeFiles/re2c.dir/src/skeleton/generate_code.cc.o
+[ 59%] Building CXX object CMakeFiles/re2c.dir/src/skeleton/generate_data.cc.o
+[ 60%] Building CXX object CMakeFiles/re2c.dir/src/skeleton/maxpath.cc.o
+[ 60%] Building CXX object CMakeFiles/re2c.dir/src/skeleton/skeleton.cc.o
+[ 60%] Building CXX object CMakeFiles/re2c.dir/src/parse/ast.cc.o
+[ 61%] Building CXX object CMakeFiles/re2c.dir/src/parse/input.cc.o
+[ 61%] Building CXX object CMakeFiles/re2c.dir/src/parse/normalize.cc.o
+[ 62%] Building CXX object CMakeFiles/re2c.dir/src/parse/scanner.cc.o
+[ 62%] Building CXX object CMakeFiles/re2c.dir/src/parse/unescape.cc.o
+[ 62%] Building CXX object CMakeFiles/re2c.dir/src/parse/validate.cc.o
+[ 63%] Building CXX object CMakeFiles/re2c.dir/src/util/get_dir.cc.o
+[ 63%] Building CXX object CMakeFiles/re2c.dir/src/util/s_to_n32_unsafe.cc.o
+[ 64%] Building CXX object CMakeFiles/re2c.dir/src/util/temp_file.cc.o
+[ 64%] Building CXX object CMakeFiles/re2c.dir/src/util/range.cc.o
+[ 64%] Building CXX object CMakeFiles/re2c.dir/src/main.cc.o
+[ 65%] Linking CXX executable re2c
+[ 65%] Built target re2c
+Scanning dependencies of target re2c_test_argsubst
+[ 66%] Building CXX object CMakeFiles/re2c_test_argsubst.dir/src/test/argsubst/test.cc.o
+[ 66%] Building CXX object CMakeFiles/re2c_test_argsubst.dir/src/codegen/helpers.cc.o
+[ 67%] Linking CXX executable re2c_test_argsubst
+[ 67%] Built target re2c_test_argsubst
+Scanning dependencies of target re2c_test_s_to_n32_unsafe
+[ 67%] Building CXX object CMakeFiles/re2c_test_s_to_n32_unsafe.dir/src/test/s_to_n32_unsafe/test.cc.o
+[ 68%] Building CXX object CMakeFiles/re2c_test_s_to_n32_unsafe.dir/src/util/s_to_n32_unsafe.cc.o
+[ 68%] Linking CXX executable re2c_test_s_to_n32_unsafe
+[ 68%] Built target re2c_test_s_to_n32_unsafe
+Scanning dependencies of target re2c_test_range
+[ 68%] Building CXX object CMakeFiles/re2c_test_range.dir/src/test/range/test.cc.o
+[ 68%] Building CXX object CMakeFiles/re2c_test_range.dir/src/util/range.cc.o
+[ 69%] Linking CXX executable re2c_test_range
+[ 69%] Built target re2c_test_range
+Scanning dependencies of target re2go
+[ 69%] Building CXX object CMakeFiles/re2go.dir/src/codegen/code_goto.cc.o
+[ 70%] Building CXX object CMakeFiles/re2go.dir/src/codegen/combine.cc.o
+[ 70%] Building CXX object CMakeFiles/re2go.dir/src/codegen/gen_bitmaps.cc.o
+[ 70%] Building CXX object CMakeFiles/re2go.dir/src/codegen/gen_delayed.cc.o
+[ 71%] Building CXX object CMakeFiles/re2go.dir/src/codegen/gen_dfa.cc.o
+[ 71%] Building CXX object CMakeFiles/re2go.dir/src/codegen/gen_goto.cc.o
+[ 72%] Building CXX object CMakeFiles/re2go.dir/src/codegen/gen_program.cc.o
+[ 72%] Building CXX object CMakeFiles/re2go.dir/src/codegen/gen_state.cc.o
+[ 72%] Building CXX object CMakeFiles/re2go.dir/src/codegen/helpers.cc.o
+[ 73%] Building CXX object CMakeFiles/re2go.dir/src/codegen/render.cc.o
+[ 73%] Building CXX object CMakeFiles/re2go.dir/src/options/opt.cc.o
+[ 74%] Building CXX object CMakeFiles/re2go.dir/src/nfa/estimate_size.cc.o
+[ 74%] Building CXX object CMakeFiles/re2go.dir/src/nfa/re_to_nfa.cc.o
+[ 74%] Building CXX object CMakeFiles/re2go.dir/src/adfa/adfa.cc.o
+[ 75%] Building CXX object CMakeFiles/re2go.dir/src/adfa/prepare.cc.o
+[ 75%] Building CXX object CMakeFiles/re2go.dir/src/debug/dump_adfa.cc.o
+[ 76%] Building CXX object CMakeFiles/re2go.dir/src/debug/dump_cfg.cc.o
+[ 76%] Building CXX object CMakeFiles/re2go.dir/src/debug/dump_dfa.cc.o
+[ 76%] Building CXX object CMakeFiles/re2go.dir/src/debug/dump_dfa_tree.cc.o
+[ 77%] Building CXX object CMakeFiles/re2go.dir/src/debug/dump_interf.cc.o
+[ 77%] Building CXX object CMakeFiles/re2go.dir/src/debug/dump_nfa.cc.o
+[ 78%] Building CXX object CMakeFiles/re2go.dir/src/cfg/cfg.cc.o
+[ 78%] Building CXX object CMakeFiles/re2go.dir/src/cfg/compact.cc.o
+[ 78%] Building CXX object CMakeFiles/re2go.dir/src/cfg/dce.cc.o
+[ 79%] Building CXX object CMakeFiles/re2go.dir/src/cfg/freeze.cc.o
+[ 79%] Building CXX object CMakeFiles/re2go.dir/src/cfg/interfere.cc.o
+[ 80%] Building CXX object CMakeFiles/re2go.dir/src/cfg/liveanal.cc.o
+[ 80%] Building CXX object CMakeFiles/re2go.dir/src/cfg/normalize.cc.o
+[ 80%] Building CXX object CMakeFiles/re2go.dir/src/cfg/optimize.cc.o
+[ 81%] Building CXX object CMakeFiles/re2go.dir/src/cfg/rename.cc.o
+[ 81%] Building CXX object CMakeFiles/re2go.dir/src/cfg/varalloc.cc.o
+[ 82%] Building CXX object CMakeFiles/re2go.dir/src/dfa/closure.cc.o
+[ 82%] Building CXX object CMakeFiles/re2go.dir/src/dfa/dead_rules.cc.o
+[ 82%] Building CXX object CMakeFiles/re2go.dir/src/dfa/determinization.cc.o
+[ 83%] Building CXX object CMakeFiles/re2go.dir/src/dfa/fallback_tags.cc.o
+[ 83%] Building CXX object CMakeFiles/re2go.dir/src/dfa/fillpoints.cc.o
+[ 84%] Building CXX object CMakeFiles/re2go.dir/src/dfa/find_state.cc.o
+[ 84%] Building CXX object CMakeFiles/re2go.dir/src/dfa/minimization.cc.o
+[ 84%] Building CXX object CMakeFiles/re2go.dir/src/dfa/stacmd.cc.o
+[ 85%] Building CXX object CMakeFiles/re2go.dir/src/dfa/tagver_table.cc.o
+[ 85%] Building CXX object CMakeFiles/re2go.dir/src/dfa/tcmd.cc.o
+[ 86%] Building CXX object CMakeFiles/re2go.dir/src/encoding/ebcdic/ebcdic_regexp.cc.o
+[ 86%] Building CXX object CMakeFiles/re2go.dir/src/encoding/enc.cc.o
+[ 86%] Building CXX object CMakeFiles/re2go.dir/src/encoding/range_suffix.cc.o
+[ 87%] Building CXX object CMakeFiles/re2go.dir/src/encoding/utf8/utf8_regexp.cc.o
+[ 87%] Building CXX object CMakeFiles/re2go.dir/src/encoding/utf8/utf8.cc.o
+[ 88%] Building CXX object CMakeFiles/re2go.dir/src/encoding/utf16/utf16_regexp.cc.o
+[ 88%] Building CXX object CMakeFiles/re2go.dir/src/encoding/utf16/utf16.cc.o
+[ 88%] Building CXX object CMakeFiles/re2go.dir/src/msg/msg.cc.o
+[ 89%] Building CXX object CMakeFiles/re2go.dir/src/msg/warn.cc.o
+[ 89%] Building CXX object CMakeFiles/re2go.dir/src/regexp/ast_to_re.cc.o
+[ 90%] Building CXX object CMakeFiles/re2go.dir/src/regexp/default_tags.cc.o
+[ 90%] Building CXX object CMakeFiles/re2go.dir/src/regexp/fixed_tags.cc.o
+[ 90%] Building CXX object CMakeFiles/re2go.dir/src/regexp/nullable.cc.o
+[ 91%] Building CXX object CMakeFiles/re2go.dir/src/regexp/rule.cc.o
+[ 91%] Building CXX object CMakeFiles/re2go.dir/src/regexp/split_charset.cc.o
+[ 92%] Building CXX object CMakeFiles/re2go.dir/src/regexp/tag.cc.o
+[ 92%] Building CXX object CMakeFiles/re2go.dir/src/compile.cc.o
+[ 92%] Building CXX object CMakeFiles/re2go.dir/src/skeleton/control_flow.cc.o
+[ 93%] Building CXX object CMakeFiles/re2go.dir/src/skeleton/generate_code.cc.o
+[ 93%] Building CXX object CMakeFiles/re2go.dir/src/skeleton/generate_data.cc.o
+[ 94%] Building CXX object CMakeFiles/re2go.dir/src/skeleton/maxpath.cc.o
+[ 94%] Building CXX object CMakeFiles/re2go.dir/src/skeleton/skeleton.cc.o
+[ 94%] Building CXX object CMakeFiles/re2go.dir/src/parse/ast.cc.o
+[ 95%] Building CXX object CMakeFiles/re2go.dir/src/parse/input.cc.o
+[ 95%] Building CXX object CMakeFiles/re2go.dir/src/parse/normalize.cc.o
+[ 96%] Building CXX object CMakeFiles/re2go.dir/src/parse/scanner.cc.o
+[ 96%] Building CXX object CMakeFiles/re2go.dir/src/parse/unescape.cc.o
+[ 96%] Building CXX object CMakeFiles/re2go.dir/src/parse/validate.cc.o
+[ 97%] Building CXX object CMakeFiles/re2go.dir/src/util/get_dir.cc.o
+[ 97%] Building CXX object CMakeFiles/re2go.dir/src/util/s_to_n32_unsafe.cc.o
+[ 98%] Building CXX object CMakeFiles/re2go.dir/src/util/temp_file.cc.o
+[ 98%] Building CXX object CMakeFiles/re2go.dir/src/util/range.cc.o
+[ 98%] Building CXX object CMakeFiles/re2go.dir/src/main.cc.o
+[100%] Linking CXX executable re2go
+[100%] Built target re2go
+
+
+❯ make install
+[ 25%] Built target libre2c_objects
+[ 25%] Built target re2c_objects_autogen_ver_to_vernum
+[ 26%] Built target libre2c_objects_autogen
+[ 27%] Built target libre2c_shared
+[ 27%] Built target bench_libre2c
+[ 28%] Built target test_libre2c
+[ 29%] Built target re2c_test_ver_to_vernum
+[ 34%] Built target re2c_objects_autogen
+[ 65%] Built target re2c
+[ 67%] Built target re2c_test_argsubst
+[ 68%] Built target re2c_test_s_to_n32_unsafe
+[ 69%] Built target re2c_test_range
+[100%] Built target re2go
+Install the project...
+-- Install configuration: ""
+-- Installing: /opt/re2c/bin/re2c
+-- Installing: /opt/re2c/share/man/man1/re2c.1
+-- Installing: /opt/re2c/bin/re2go
+-- Installing: /opt/re2c/share/man/man1/re2go.1
+-- Installing: /opt/re2c/share/re2c/stdlib/unicode_categories.re
+-- Installing: /opt/re2c/lib/libre2c.so
+
